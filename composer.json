@@ -1,9 +1,9 @@
 {
-    "name": "jacobsteringa/odoo-client",
+    "name": "rbonnal-beclood/OdooClient",
     "type": "library",
-    "description": "A PHP Client for Odoo",
+    "description": "A PHP Client for Odoo, forked from jacobsteringa/odoo-client",
     "keywords": [],
-    "homepage": "https://github.com/jacobsteringa/OdooClient",
+    "homepage": "https://github.com/rbonnal-beclood/OdooClient",
     "license": "MIT",
     "authors": [
         {
@@ -19,6 +19,6 @@
     "autoload": {
         "psr-0": { "Jsg\\": "" }
     },
-    "target-dir": "Jsg/Odoo",
+    "target-dir": "Rbb/Odoo",
     "minimum-stability": "dev"
 }
