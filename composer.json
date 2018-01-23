@@ -1,5 +1,5 @@
 {
-    "name": "rbonnal-beclood/OdooClient",
+    "name": "rbonnal-beclood/odoo-client",
     "type": "library",
     "description": "A PHP Client for Odoo, forked from jacobsteringa/odoo-client",
     "keywords": [],
