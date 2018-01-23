@@ -152,6 +152,27 @@ class Odoo
 	}
 
 	/**
+	 * Search count models
+	 *
+	 * @param string  $model  Model
+	 * @param array   $data   Array of criteria
+	 *
+	 * @return array Array of model id's
+	 */
+	public function searchCount($model, $data)
+	{
+		$params = $this->buildParams(array(
+			$model,
+			'search_count',
+			$data
+		));
+
+		$response = $this->getClient('object')->call('execute', $params);
+
+		return $response;
+	}
+
+	/**
 	 * Create model
 	 *
 	 * @param string $model Model
