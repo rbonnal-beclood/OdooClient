@@ -19,6 +19,6 @@
     "autoload": {
         "psr-0": { "Jsg\\": "" }
     },
-    "target-dir": "Rbb/Odoo",
+    "target-dir": "Jsg/Odoo",
     "minimum-stability": "dev"
 }
