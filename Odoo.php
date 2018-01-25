@@ -127,6 +127,27 @@ class Odoo
 	}
 
 	/**
+	 * Search count models
+	 *
+	 * @param string  $model  Model
+	 *
+	 * @return array Array of fileds
+	 */
+	public function getFields($model)
+	{
+		$params = $this->buildParams(array(
+			$model,
+			'fields_get',
+			array(),
+			array('attributes' => array('string', 'help', 'type')),
+		));
+
+		$response = $this->getClient('object')->call('execute', $params);
+
+		return $response;
+	}
+
+	/**
 	 * Search models
 	 *
 	 * @param string  $model  Model
